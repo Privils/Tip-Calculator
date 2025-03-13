@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Tip Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
+    <p class="info"></p>
+    <section class="inputCont">
+      <form>
+        <label for="bill">total bill</label><br />
+        <input  id="bill" name="bill" /><br>
+        <label for="Tpeople">total amount of people sharing the bill</label><br />
+        <input  id="Tpeople" name="bill" /><br>
+        <p id="final"></p>
+        <!-- <label for="final">final amount</label><br />
+        <input  id="final" name="bill" />-->
+        <button type="button" class="btn">calculate</button>
+      </form>
+     
+    </section>
+    <div class="extra">
+      <p>lets have a little fun with colors but make sure you have the correct spelling</p>
+      <h2>enter any color to change the background of the form</h2>
+      <input type="text" class="colorChanger"><button class="changeBg">change</button>
+    </div>
     <!-- 
     //functionality
     input for total bill
@@ -14,5 +34,6 @@
     display the math
     then display the result in high fonts
      -->
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
